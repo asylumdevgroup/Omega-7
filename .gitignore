@@ -41,3 +41,13 @@ crash-reports/
 local/
 
 backups/
+
+secrets.jsonc
+
+fancymenu_data/
+
+rhino.local.properties
+
+enigmatic_persistence.dat
+
+modernfix/

@@ -1,0 +1,14 @@
+{
+  "__comment": "Instructions: https://blakesmods.com/docs/cucumber/tags-config",
+  "forge:dusts/niter": "voluminousenergy:saltpeterdust",
+  "forge:ingots/mithril": "null",
+  "forge:ingots/platinum": "factorium:mat_platinum_ingot",
+  "forge:ingots/graphite": "bigreactors:graphite_ingot",
+  "forge:rubber": "null",
+  "forge:ingots/iridium": "advanced_solars:iridium_ingot",
+  "forge:ingots/chrome": "null",
+  "forge:dusts/saltpeter": "voluminousenergy:saltpeterdust",
+  "forge:silicon": "tinyredstone:silicon",
+  "forge:ingots/titanium": "voluminousenergy:titanium_ingot",
+  "forge:ingots/tungsten": "voluminousenergy:tungsten_ingot"
+}

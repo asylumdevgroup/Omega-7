@@ -1,0 +1,4 @@
+#Position of the gravisuit Hud
+#Allowed Values: TOPLEFT, TOPRIGHT, TOPMIDDLE, BOTTOMLEFT, BOTTOMRIGHT
+POSITION = "TOPLEFT"
+
