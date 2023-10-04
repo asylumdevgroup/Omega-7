@@ -9,7 +9,7 @@
 	/**
 	 * Whether cheating in items is enabled.
 	 */
-	cheat-mode: false;
+	cheat-mode: true;
 
 	/**
 	 * How much EMI should use tooltips and popups to show controls and information.
@@ -334,6 +334,11 @@
 	 * Return to the previous page in EMI.
 	 */
 	back: "key.keyboard.backspace";
+
+	/**
+	 * Return to the next page in EMI after going back.
+	 */
+	forward: "key.keyboard.unknown";
 
 	/**
 	 * When on a stack with an associated recipe:

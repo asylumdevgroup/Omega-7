@@ -59,7 +59,7 @@
 		#Saltpeter Ore Blob Settings
 		["World Generation"."Ore Generation"."Saltpeter Ore Settings"]
 			#Range: > 0
-			"Saltpeter Size" = 33
+			"Saltpeter Size" = 0
 			#Chance that that the generated blob will be discarded (ungenerated) if exposed to air
 			#Range: 0.0 ~ 1.0
 			"Saltpeter Exposed Discard Chance" = 0.0
@@ -67,7 +67,7 @@
 		#Bauxite Ore Settings
 		["World Generation"."Ore Generation"."Bauxite Ore Settings"]
 			#Range: > 0
-			"Bauxite Size" = 8
+			"Bauxite Size" = 0
 			#Chance that that the generated blob will be discarded (ungenerated) if exposed to air
 			#Range: 0.0 ~ 1.0
 			"Bauxite Exposed Discard Chance" = 0.0
@@ -75,7 +75,7 @@
 		#Cinnabar Ore Settings
 		["World Generation"."Ore Generation"."Cinnabar Ore Settings"]
 			#Range: > 0
-			"Cinnabar Size" = 6
+			"Cinnabar Size" = 0
 			#Chance that that the generated blob will be discarded (ungenerated) if exposed to air
 			#Range: 0.0 ~ 1.0
 			"Cinnabar Exposed Discard Chance" = 0.0
@@ -83,7 +83,7 @@
 		#Rutile Ore Settings
 		["World Generation"."Ore Generation"."Rutile Ore Settings"]
 			#Range: > 0
-			"Rutile Size" = 4
+			"Rutile Size" = 0
 			#Chance that that the generated blob will be discarded (ungenerated) if exposed to air
 			#Range: 0.0 ~ 1.0
 			"Rutile Exposed Discard Chance" = 0.75
@@ -91,7 +91,7 @@
 		#Galena Ore Settings
 		["World Generation"."Ore Generation"."Galena Ore Settings"]
 			#Range: > 0
-			"Galena Size" = 6
+			"Galena Size" = 0
 			#Range: 0 ~ 16
 			"Galena Light Glow Level" = 4
 			#Chance that that the generated blob will be discarded (ungenerated) if exposed to air

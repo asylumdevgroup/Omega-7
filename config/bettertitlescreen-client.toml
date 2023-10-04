@@ -9,7 +9,7 @@
 	#Show which version of Minecraft Coder Pack (MCP) the client is running.
 	showMcpVersion = false
 	#Show which version of Minecraft Forge the client is running.
-	showForgeVersion = false
+	showForgeVersion = true
 	#Show how many mods are loaded.
-	showModsLoaded = false
+	showModsLoaded = true
 

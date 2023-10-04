@@ -1,0 +1,37 @@
+{
+    "id": "platinum",
+    "source": "modded",
+    "localizedName": "Platinum",
+    "processedTypes": [
+        "storage_block",
+        "ore",
+        "raw",
+        "crushed_ore",
+        "ingot",
+        "nugget",
+        "dust",
+        "plate",
+        "rod",
+        "gear",
+        "slurry",
+        "crystal",
+        "shard",
+        "clump",
+        "dirty_dust"
+    ],
+    "properties": {
+        "materialType": "metal",
+        "harvestLevel": 2
+    },
+    "colors": {
+        "gasColor": "4dc6fe"
+    },
+    "oreDrop": {
+        "drop": "emendatusenigmatica:raw_platinum",
+        "min": 1,
+        "max": 1
+    },
+    "compat": {
+        "thermal": false
+    }
+}

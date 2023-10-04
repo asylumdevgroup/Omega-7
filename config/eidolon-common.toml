@@ -29,7 +29,7 @@
 #World generation settings
 [world]
 	#Whether lead ore is enabled. Set to false to disable spawning.
-	leadEnabled = true
+	leadEnabled = false
 	#Minimum Y value for lead ore veins
 	#Range: -63 ~ 318
 	leadOreMinY = -27
@@ -43,7 +43,7 @@
 	#Range: 0 ~ 255
 	leadOreVeinCount = 6
 	#Whether silver ore is enabled. Set to false to disable spawning.
-	silverEnabled = true
+	silverEnabled = false
 	#Minimum Y value for silver ore veins
 	#Range: -63 ~ 318
 	silverOreMinY = -60
