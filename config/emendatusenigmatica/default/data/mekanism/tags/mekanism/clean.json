@@ -1,0 +1,19 @@
+{
+  "values": [
+    "emendatusenigmatica:clean_platinum",
+    "emendatusenigmatica:clean_tungsten",
+    "emendatusenigmatica:clean_tin",
+    "emendatusenigmatica:clean_zinc",
+    "emendatusenigmatica:clean_iesnium",
+    "emendatusenigmatica:clean_silver",
+    "emendatusenigmatica:clean_uranium",
+    "emendatusenigmatica:clean_titanium",
+    "emendatusenigmatica:clean_aluminum",
+    "emendatusenigmatica:clean_gold",
+    "emendatusenigmatica:clean_copper",
+    "emendatusenigmatica:clean_nickel",
+    "emendatusenigmatica:clean_osmium",
+    "emendatusenigmatica:clean_lead",
+    "emendatusenigmatica:clean_iron"
+  ]
+}

@@ -1,2 +1,4 @@
-// 1.19.2	2023-09-26T16:14:17.1526264	Emendatus Enigmatica Block Harvest Tool Tags
+// 1.19.2	2023-10-05T22:03:18.9138206	Emendatus Enigmatica Block Harvest Tool Tags
 13cf1fe06cf159d32d074144254a0d375f6b20e7 data/forge/tags/blocks/mineable/paxel.json
+4c86a61fcd29564bc7d6bdad13292cca087b90ed data/minecraft/tags/blocks/mineable/pickaxe.json
+76bc26159c2ae7447344a2a35160082e92b85924 data/minecraft/tags/blocks/mineable/shovel.json
