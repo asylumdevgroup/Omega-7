@@ -1,12 +1,19 @@
 {
   "modPriorities": [
+    "emendatusenigmatica",
     "minecraft",
     "kubejs",
-    "emendatusenigmatica",
     "create",
     "thermal",
     "immersiveengineering",
-    "mekanism"
+    "mekanism",
+    "ic2",
+    "factorium",
+    "indreb",
+    "easy_steel",
+    "xycraft_world",
+    "rftoolsbase",
+    "assemblylinemachines"
   ],
   "stoneStrata": [
     "stone",
@@ -75,6 +82,7 @@
     "steel",
     "sulfur",
     "tin",
+    "titanium",
     "tungsten",
     "uranium",
     "zinc"

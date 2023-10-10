@@ -23,7 +23,7 @@
 
 [Ores]
 	#Should Titanium and Deepslate Titanium Ore generate in the overworld?
-	titaniumOre = true
+	titaniumOre = false
 	#Should Black Granite generate in the Nether?
 	blackGranite = true
 	#Should Black Granite spawn with its natural property, preventing it from being collected with non-electric Pickaxes?

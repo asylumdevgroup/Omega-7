@@ -1,4 +1,22 @@
 WorldgenEvents.remove( event => {
+
+    event.removeFeatureById('underground_ores', [
+        'occultism:underground_grove',
+        'occultism:silver_ore_deepslate',
+        'occultism:silver_ore',
+        'rftoolsbase:dimshard_dimensions',
+        'rftoolsbase:dimshard_end',
+        'rftoolsbase:dimshard_nether',
+        'rftoolsbase:dimshard_overworld',
+        'thermal:lead_ore',
+        'thermal:nickel_ore',
+        'thermal:niter_ore',
+        'thermal:cinnabar_ore',
+        'thermal:silver_ore',
+        'thermal:tin_ore',
+        'thermal:sulfur_ore',
+        'thermal:apatite_ore',
+    ]);
     event.removeOres(props => {
         props.worldgenLayer = 'underground_ores';
         props.blocks = [
@@ -31,8 +49,6 @@ WorldgenEvents.remove( event => {
             "factorium:mat_platinum_ore_nether",
             "factorium:mat_zinc_ore",
             "factorium:mat_zinc_ore_deep",
-            "assemblylinemachines:titanium_ore",
-            "assemblylinemachines:deepslate_titanium_ore",
             "xycraft_world:aluminum_ore_stone",
             "xycraft_world:aluminum_ore_deepslate",
             "xycraft_world:aluminum_ore_kivi",
@@ -43,27 +59,7 @@ WorldgenEvents.remove( event => {
             'minecraft:emerald_ore',
             'minecraft:redstone_ore',
             'minecraft:coal_ore',
-            'minecraft:lapis_ore',
-            'thermal:lead_ore',
-            'thermal:nickel_ore',
-            'thermal:niter_ore',
-            'thermal:cinnabar_ore',
-            'thermal:silver_ore',
-            'thermal:tin_ore',
-            'thermal:sulfur_ore',
-            'thermal:apatite_ore',
-            'rftoolsbase:dimshard_dimensions',
-            'rftoolsbase:dimshard_end',
-            'rftoolsbase:dimshard_nether',
-            'rftoolsbase:dimshard_overworld',
-            'mekanism:tin_ore',
-            'mekanism:deepslate_tin_ore',
-            'mekanism:osmium_ore',
-            'mekanism:deepslate_osmium_ore',
-            'mekanism:uranium_ore',
-            'mekanism:deepslate_uranium_ore',
-            'mekanism:lead_ore',
-            'mekanism:deepslate_lead_ore'
+            'minecraft:lapis_ore'
         ];
     });
 
