@@ -12,8 +12,12 @@
 	"Vanilla-Consistent Mining Speeds" = true
 	#Changes the hitboxes of vanilla double plants. Disable if it causes odd behavior.
 	"Change Double Plant Hitboxes" = true
-	#Changes Gold Aercloud and respective parachute behavior to launch entities downwards
+	#Changes Gold Aercloud behavior to launch entities downwards
 	"Gold Aerclouds launch entities downwards" = true
+	#Makes blockstate conversion sounds (ambrosium, swet ball) better
+	"Better Conversion Sounds" = true
+	#Changes Gold Parachute behavior to launch entities downwards and only have one durability
+	"Gold Parachutes launch entities downwards" = false
 
 [Audio]
 
@@ -44,8 +48,6 @@
 	"Mossy Holystone Ores" = true
 	#Replaces chests found in the Aether's dungeons with ones made of skyroot. Affects mimics as well.
 	"Skyroot Dungeon Chests" = true
-	#Modifies the depth density function of the Aether to use an alternate one that allows height-dependent biomes. Disable if problems arise.
-	"Modify Depth Density Function" = true
 
 	[Worldgen.Biomes]
 		#When enabled, any biome value config changes will be reset. It is recommended that you disable this if you want to keep any custom biome parameters you may have set.
@@ -59,9 +61,9 @@
 
 			[Worldgen.Biomes."The Blight".Temperature]
 				#Minimum Temperature value for the Blight.
-				Min = 0.0
+				Min = -0.2
 				#Maximum Temperature value for the Blight.
-				Max = 0.4
+				Max = 0.6
 
 			[Worldgen.Biomes."The Blight".Humidity]
 				#Minimum Humidity value for the Blight.
@@ -113,9 +115,9 @@
 
 			[Worldgen.Biomes."Cloudcap Jungle".Temperature]
 				#Minimum Temperature value for the Cloudcap Jungle.
-				Min = 0.0
+				Min = -0.2
 				#Maximum Temperature value for the Cloudcap Jungle.
-				Max = 0.4
+				Max = 0.6
 
 			[Worldgen.Biomes."Cloudcap Jungle".Humidity]
 				#Minimum Humidity value for the Cloudcap Jungle.

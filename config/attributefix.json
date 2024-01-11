@@ -286,6 +286,17 @@
         "value": 1024
       }
     },
+    "eidolon:chanting_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "vampirism:sundamage": {
       "enabled": false,
       "min": {
@@ -511,6 +522,17 @@
       "min": {
         "default": 1,
         "value": 1
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "eidolon:magic_power": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
       },
       "max": {
         "default": 10,
@@ -911,6 +933,17 @@
       "max": {
         "default": 1024,
         "value": 1000000
+      }
+    },
+    "irons_spellbooks:mana_regen": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "irons_spellbooks:ice_magic_resist": {

@@ -16,6 +16,10 @@ WorldgenEvents.remove( event => {
         'thermal:tin_ore',
         'thermal:sulfur_ore',
         'thermal:apatite_ore',
+        'eidolon:silver_ore_placed',
+        'eidolon:lead_ore_placed',
+        'malum:natural_quartz',
+        'silentgems:silver_ore'
     ]);
     event.removeOres(props => {
         props.worldgenLayer = 'underground_ores';
