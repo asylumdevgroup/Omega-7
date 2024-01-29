@@ -1,4 +1,4 @@
-# === Energized Power Common Config (IMPORTANT: Not all values are synced from the server to the client.) ===
+# === Energized Power Common Config (IMPORTANT: Values are not synced from the server to the client.) ===
 
 # The energy capacity of the Battery (Tier I) in FE
 # [Default value]: 256
@@ -161,11 +161,6 @@ block.advanced_battery_box.capacity = 8388608
 # [Validation]: Value >= 1
 block.advanced_battery_box.transfer_rate = 262144
 
-# The energy transfer rate of the LV Transformers in FE per tick
-# [Default value]: 8192
-# [Validation]: Value >= 1
-block.lv_transformers.transfer_rate = 8192
-
 # The energy transfer rate of the MV Transformers in FE per tick
 # [Default value]: 65536
 # [Validation]: Value >= 1
@@ -183,13 +178,13 @@ block.ehv_transformers.transfer_rate = 2097152
 
 # The energy extraction mode defines how cables extract energy.
 # - PUSH: Producers must push energy into cables.
-# - PULL: Cables pull energy from producers.
+# - PULL: Cables pull energy from cables.
 # - BOTH: Both systems are used.
 # => Set to PULL for the behavior of cables before version 2.1.1.
 # => Set to BOTH for compatibility with any FE energy producers.
 #
 # [Default value]: BOTH
-# [Validation]: Value must be one of [PUSH, PULL, BOTH]
+# [Validation]: Value must be on of [PUSH, PULL, BOTH]
 block.cables.energy_extraction_mode = BOTH
 
 # The energy transfer rate of the Copper Cable in FE per tick
@@ -258,26 +253,6 @@ block.charging_station.transfer_rate = 16384
 # [Validation]: Value <= 25
 block.charging_station.max_charging_distance = 7
 
-# The energy capacity of the Crystal Growth Chamber in FE
-# [Default value]: 32768
-# [Validation]: Value >= 1
-block.crystal_growth_chamber.capacity = 32768
-
-# The energy transfer rate of the Crystal Growth Chamber in FE per tick
-# [Default value]: 2048
-# [Validation]: Value >= 1
-block.crystal_growth_chamber.transfer_rate = 2048
-
-# The energy consumption of the Crystal Growth Chamber if active in FE per tick
-# [Default value]: 1024
-# [Validation]: Value >= 1
-block.crystal_growth_chamber.energy_consumption_per_tick = 1024
-
-# The multiplier by which the time a recipe of the Crystal Growth Chamber requires is multiplied by
-# [Default value]: 1.000000
-# [Validation]: Value > 0.0
-block.crystal_growth_chamber.recipe_duration_multiplier = 1.000000
-
 # The energy capacity of the Time Controller in FE
 # [Default value]: 8388608
 # [Validation]: Value >= 1
@@ -287,76 +262,6 @@ block.time_controller.capacity = 8388608
 # [Default value]: 32768
 # [Validation]: Value >= 1
 block.time_controller.transfer_rate = 32768
-
-# The energy capacity of the Teleporter in FE
-# [Default value]: 8388608
-# [Validation]: Value >= 1
-block.teleporter.capacity = 8388608
-
-# The energy transfer rate of the Teleporter in FE per tick
-# [Default value]: 65536
-# [Validation]: Value >= 1
-block.teleporter.transfer_rate = 65536
-
-# Intra dimensional teleportation (= within a dimension) is not allowed if set to false.
-# [Default value]: true
-block.teleporter.intra_dimensional_enabled = true
-
-# Inter dimensional teleportation (= across multiple dimension) is not allowed if set to false.
-# [Default value]: true
-block.teleporter.inter_dimensional_enabled = true
-
-# Teleportation within, from, and to dimensions in this list are not allowed.
-# [Default value]: []
-# [Validation]: Syntax (whitespaces are ignored): [namespace1:path1, namespace2:path2, ...]
-block.teleporter.dimension_blacklist = []
-
-# Teleportation within dimensions in this list are not allowed.
-# Teleportation to and from dimensions in this list are still allowed.
-#
-# [Default value]: []
-# [Validation]: Syntax (whitespaces are ignored): [namespace1:path1, namespace2:path2, ...]
-block.teleporter.intra_dimensional_blacklist = []
-
-# Teleportation from dimensions in this list are not allowed.
-# Teleportation within and to dimensions in this list are still allowed.
-#
-# [Default value]: []
-# [Validation]: Syntax (whitespaces are ignored): [namespace1:path1, namespace2:path2, ...]
-block.teleporter.inter_dimension_from_blacklist = []
-
-# Teleportation to dimensions in this list are not allowed.
-# Teleportation within and from dimensions in this list are still allowed.
-#
-# [Default value]: []
-# [Validation]: Syntax (whitespaces are ignored): [namespace1:path1, namespace2:path2, ...]
-block.teleporter.inter_dimension_to_blacklist = []
-
-# Teleportation within, from, and to dimension types in this list are not allowed.
-# [Default value]: []
-# [Validation]: Syntax (whitespaces are ignored): [namespace1:path1, namespace2:path2, ...]
-block.teleporter.dimension_type_blacklist = []
-
-# Teleportation within dimension types in this list are not allowed.
-# Teleportation to and from dimension types in this list are still allowed.
-#
-# [Default value]: []
-# [Validation]: Syntax (whitespaces are ignored): [namespace1:path1, namespace2:path2, ...]
-block.teleporter.intra_dimensional_type_blacklist = []
-
-# Teleportation from dimension types in this list are not allowed.
-# Teleportation within and to dimension types in this list are still allowed.
-#
-# [Default value]: []
-# [Validation]: Syntax (whitespaces are ignored): [namespace1:path1, namespace2:path2, ...]
-block.teleporter.inter_dimension_from_type_blacklist = []
-
-# Teleportation to dimension types in this list are not allowed.
-# Teleportation within and from dimension types in this list are still allowed.
-#
-# [Default value]: []
-# [Validation]: Syntax (whitespaces are ignored): [namespace1:path1, namespace2:path2, ...]
-block.teleporter.inter_dimension_to_type_blacklist = []
 
 # The energy capacity of the Coal Engine in FE
 # [Default value]: 2048
@@ -374,94 +279,79 @@ block.coal_engine.transfer_rate = 256
 block.coal_engine.energy_production_multiplier = 1.000000
 
 # The energy capacity of the Solar Panel (Tier I) in FE
-# [Default value]: 80
+# [Default value]: 1280
 # [Validation]: Value >= 1
 block.solar_panel_1.capacity = 1280
 
 # The energy transfer rate of the Solar Panel (Tier I) in FE per tick
-# [Default value]: 8
+# [Default value]: 128
 # [Validation]: Value >= 1
 block.solar_panel_1.transfer_rate = 128
 
 # The peak energy production of the Solar Panel (Tier I) for ideal conditions (e.g. at noon with clear sky for solar panels) in FE per tick
-# [Default value]: 2
+# [Default value]: 32
 # [Validation]: Value >= 1
 block.solar_panel_1.energy_peak_production = 32
 
 # The energy capacity of the Solar Panel (Tier II) in FE
-# [Default value]: 640
+# [Default value]: 10240
 # [Validation]: Value >= 1
 block.solar_panel_2.capacity = 10240
 
 # The energy transfer rate of the Solar Panel (Tier II) in FE per tick
-# [Default value]: 64
+# [Default value]: 1024
 # [Validation]: Value >= 1
 block.solar_panel_2.transfer_rate = 1024
 
 # The peak energy production of the Solar Panel (Tier II) for ideal conditions (e.g. at noon with clear sky for solar panels) in FE per tick
-# [Default value]: 16
+# [Default value]: 256
 # [Validation]: Value >= 1
 block.solar_panel_2.energy_peak_production = 256
 
 # The energy capacity of the Solar Panel (Tier III) in FE
-# [Default value]: 5120
+# [Default value]: 81920
 # [Validation]: Value >= 1
 block.solar_panel_3.capacity = 81920
 
 # The energy transfer rate of the Solar Panel (Tier III) in FE per tick
-# [Default value]: 512
+# [Default value]: 8192
 # [Validation]: Value >= 1
 block.solar_panel_3.transfer_rate = 8192
 
 # The peak energy production of the Solar Panel (Tier III) for ideal conditions (e.g. at noon with clear sky for solar panels) in FE per tick
-# [Default value]: 128
+# [Default value]: 2048
 # [Validation]: Value >= 1
 block.solar_panel_3.energy_peak_production = 2048
 
 # The energy capacity of the Solar Panel (Tier IV) in FE
-# [Default value]: 81920
+# [Default value]: 1310720
 # [Validation]: Value >= 1
 block.solar_panel_4.capacity = 1310720
 
 # The energy transfer rate of the Solar Panel (Tier IV) in FE per tick
-# [Default value]: 8192
+# [Default value]: 131072
 # [Validation]: Value >= 1
 block.solar_panel_4.transfer_rate = 131072
 
 # The peak energy production of the Solar Panel (Tier IV) for ideal conditions (e.g. at noon with clear sky for solar panels) in FE per tick
-# [Default value]: 2048
+# [Default value]: 32768
 # [Validation]: Value >= 1
 block.solar_panel_4.energy_peak_production = 32768
 
 # The energy capacity of the Solar Panel (Tier V) in FE
-# [Default value]: 327680
+# [Default value]: 3145728
 # [Validation]: Value >= 1
 block.solar_panel_5.capacity = 3145728
 
 # The energy transfer rate of the Solar Panel (Tier V) in FE per tick
-# [Default value]: 131072
+# [Default value]: 2097152
 # [Validation]: Value >= 1
 block.solar_panel_5.transfer_rate = 2097152
 
 # The peak energy production of the Solar Panel (Tier V) for ideal conditions (e.g. at noon with clear sky for solar panels) in FE per tick
-# [Default value]: 16384
+# [Default value]: 262144
 # [Validation]: Value >= 1
 block.solar_panel_5.energy_peak_production = 262144
-
-# The energy capacity of the Solar Panel (Tier VI) in FE
-# [Default value]: 1048576
-# [Validation]: Value >= 1
-block.solar_panel_6.capacity = 1048576
-
-# The energy transfer rate of the Solar Panel (Tier VI) in FE per tick
-# [Default value]: 524288
-# [Validation]: Value >= 1
-block.solar_panel_6.transfer_rate = 524288
-
-# The peak energy production of the Solar Panel (Tier VI) for ideal conditions (e.g. at noon with clear sky for solar panels) in FE per tick
-# [Default value]: 131072
-# [Validation]: Value >= 1
-block.solar_panel_6.energy_peak_production = 131072
 
 # The energy capacity of the Minecart Charger in FE
 # [Default value]: 16384
@@ -523,36 +413,6 @@ block.crusher.energy_consumption_per_tick = 8
 # [Validation]: Value >= 1
 block.crusher.recipe_duration = 100
 
-# The energy capacity of the Advanced Crusher in FE
-# [Default value]: 4096
-# [Validation]: Value >= 1
-block.advanced_crusher.capacity = 4096
-
-# The energy transfer rate of the Advanced Crusher in FE per tick
-# [Default value]: 256
-# [Validation]: Value >= 1
-block.advanced_crusher.transfer_rate = 256
-
-# The energy consumption of the Advanced Crusher if active in FE per tick
-# [Default value]: 32
-# [Validation]: Value >= 1
-block.advanced_crusher.energy_consumption_per_tick = 32
-
-# The time a recipe of the Advanced Crusher requires in ticks
-# [Default value]: 25
-# [Validation]: Value >= 1
-block.advanced_crusher.recipe_duration = 25
-
-# The fluid tank capacity of the Advanced Crusher in buckets (= 1000 mB)
-# [Default value]: 8
-# [Validation]: Value >= 1
-block.advanced_crusher.fluid_tank_capacity = 8
-
-# The amount of Water in mB (milli Buckets) which will be converted to Dirty Water per completed recipe in the Advanced Crusher.
-# [Default value]: 10
-# [Validation]: Value >= 1
-block.advanced_crusher.water_usage_per_recipe = 10
-
 # The energy capacity of the Pulverizer in FE
 # [Default value]: 2048
 # [Validation]: Value >= 1
@@ -572,36 +432,6 @@ block.pulverizer.energy_consumption_per_tick = 8
 # [Default value]: 100
 # [Validation]: Value >= 1
 block.pulverizer.recipe_duration = 100
-
-# The energy capacity of the Advanced Pulverizer in FE
-# [Default value]: 4096
-# [Validation]: Value >= 1
-block.advanced_pulverizer.capacity = 4096
-
-# The energy transfer rate of the Advanced Pulverizer in FE per tick
-# [Default value]: 256
-# [Validation]: Value >= 1
-block.advanced_pulverizer.transfer_rate = 256
-
-# The energy consumption of the Advanced Pulverizer if active in FE per tick
-# [Default value]: 32
-# [Validation]: Value >= 1
-block.advanced_pulverizer.energy_consumption_per_tick = 32
-
-# The time a recipe of the Advanced Pulverizer requires in ticks
-# [Default value]: 25
-# [Validation]: Value >= 1
-block.advanced_pulverizer.recipe_duration = 25
-
-# The fluid tank capacity of the Advanced Pulverizer in buckets (= 1000 mB)
-# [Default value]: 8
-# [Validation]: Value >= 1
-block.advanced_pulverizer.fluid_tank_capacity = 8
-
-# The amount of Water in mB (milli Buckets) which will be converted to Dirty Water per completed recipe in the Advanced Pulverizer.
-# [Default value]: 10
-# [Validation]: Value >= 1
-block.advanced_pulverizer.water_usage_per_recipe = 10
 
 # The energy capacity of the Sawmill in FE
 # [Default value]: 2048
@@ -643,26 +473,6 @@ block.compressor.energy_consumption_per_tick = 16
 # [Validation]: Value >= 1
 block.compressor.recipe_duration = 100
 
-# The energy capacity of the Metal Press in FE
-# [Default value]: 2048
-# [Validation]: Value >= 1
-block.metal_press.capacity = 2048
-
-# The energy transfer rate of the Metal Press in FE per tick
-# [Default value]: 256
-# [Validation]: Value >= 1
-block.metal_press.transfer_rate = 256
-
-# The energy consumption of the Metal Press if active in FE per tick
-# [Default value]: 16
-# [Validation]: Value >= 1
-block.metal_press.energy_consumption_per_tick = 16
-
-# The time a recipe of the Metal Press requires in ticks
-# [Default value]: 250
-# [Validation]: Value >= 1
-block.metal_press.recipe_duration = 250
-
 # The energy capacity of the Energizer in FE
 # [Default value]: 65536
 # [Validation]: Value >= 1
@@ -702,40 +512,6 @@ block.auto_crafter.energy_consumption_per_tick_per_ingredient = 2
 # [Default value]: 100
 # [Validation]: Value >= 1
 block.auto_crafter.recipe_duration = 100
-
-# The recipe blacklist for the Auto Crafter.
-# The blacklist is a list of recipe ids which can not be crafted in the Auto Crafter
-#
-# [Default value]: []
-# [Validation]: Syntax (whitespaces are ignored): [namespace1:path1, namespace2:path2, ...]
-block.auto_crafter.recipe_blacklist = []
-
-# The energy capacity of the Advanced Auto Crafter in FE
-# [Default value]: 16384
-# [Validation]: Value >= 1
-block.advanced_auto_crafter.capacity = 16384
-
-# The energy transfer rate of the Advanced Auto Crafter in FE per tick
-# [Default value]: 1024
-# [Validation]: Value >= 1
-block.advanced_auto_crafter.transfer_rate = 1024
-
-# The energy consumption of the Advanced Auto Crafter if active in FE per tick per ingredient
-# [Default value]: 16
-# [Validation]: Value >= 1
-block.advanced_auto_crafter.energy_consumption_per_tick_per_ingredient = 16
-
-# The time a recipe of the Advanced Auto Crafter requires in ticks
-# [Default value]: 50
-# [Validation]: Value >= 1
-block.advanced_auto_crafter.recipe_duration = 50
-
-# The recipe blacklist for the Advanced Auto Crafter.
-# The blacklist is a list of recipe ids which can not be crafted in the Advanced Auto Crafter
-#
-# [Default value]: []
-# [Validation]: Syntax (whitespaces are ignored): [namespace1:path1, namespace2:path2, ...]
-block.advanced_auto_crafter.recipe_blacklist = []
 
 # The energy capacity of the Heat Generator in FE
 # [Default value]: 10000
@@ -792,31 +568,6 @@ block.block_placer.energy_consumption_per_tick = 32
 # [Validation]: Value >= 1
 block.block_placer.placement_duration = 20
 
-# Blocks in this list can not be placed by the Block Placer.
-# [Default value]: []
-# [Validation]: Syntax (whitespaces are ignored): [namespace1:path1, namespace2:path2, ...]
-block.block_placer.placement_blacklist = []
-
-# The energy capacity of the Assembling Machine in FE
-# [Default value]: 8192
-# [Validation]: Value >= 1
-block.assembling_machine.capacity = 8192
-
-# The energy transfer rate of the Assembling Machine in FE per tick
-# [Default value]: 512
-# [Validation]: Value >= 1
-block.assembling_machine.transfer_rate = 512
-
-# The energy consumption of the Assembling Machine if active in FE per tick
-# [Default value]: 256
-# [Validation]: Value >= 1
-block.assembling_machine.energy_consumption_per_tick = 256
-
-# The time a recipe of the Assembling Machine requires in ticks
-# [Default value]: 200
-# [Validation]: Value >= 1
-block.assembling_machine.recipe_duration = 200
-
 # The energy transfer rate of the Powered Lamp in FE per tick
 # [Default value]: 16
 # [Validation]: Value >= 1
@@ -844,13 +595,6 @@ block.powered_furnace.energy_consumption_per_tick = 128
 # [Validation]: Value > 0.0
 block.powered_furnace.recipe_duration_multiplier = 1.000000
 
-# The recipe blacklist for the Powered Furnace.
-# The blacklist is a list of recipe ids which can not be crafted in the Powered Furnace
-#
-# [Default value]: []
-# [Validation]: Syntax (whitespaces are ignored): [namespace1:path1, namespace2:path2, ...]
-block.powered_furnace.recipe_blacklist = []
-
 # The energy capacity of the Advanced Powered Furnace in FE
 # [Default value]: 32768
 # [Validation]: Value >= 1
@@ -873,13 +617,6 @@ block.advanced_powered_furnace.energy_consumption_per_input_per_tick = 1024
 # [Validation]: Value > 0.0
 block.advanced_powered_furnace.recipe_duration_multiplier = 1.000000
 
-# The recipe blacklist for the Advanced Powered Furnace.
-# The blacklist is a list of recipe ids which can not be crafted in the Advanced Powered Furnace
-#
-# [Default value]: []
-# [Validation]: Syntax (whitespaces are ignored): [namespace1:path1, namespace2:path2, ...]
-block.advanced_powered_furnace.recipe_blacklist = []
-
 # The energy capacity of the Plant Growth Chamber in FE
 # [Default value]: 4096
 # [Validation]: Value >= 1
@@ -899,61 +636,6 @@ block.plant_growth_chamber.energy_consumption_per_tick = 32
 # [Default value]: 1.000000
 # [Validation]: Value > 0.0
 block.plant_growth_chamber.recipe_duration_multiplier = 1.000000
-
-# The energy capacity of the Stone Solidifier in FE
-# [Default value]: 4096
-# [Validation]: Value >= 1
-block.stone_solidifier.capacity = 4096
-
-# The energy transfer rate of the Stone Solidifier in FE per tick
-# [Default value]: 256
-# [Validation]: Value >= 1
-block.stone_solidifier.transfer_rate = 256
-
-# The energy consumption of the Stone Solidifier if active in FE per tick
-# [Default value]: 128
-# [Validation]: Value >= 1
-block.stone_solidifier.energy_consumption_per_tick = 128
-
-# The fluid tank capacity of the Stone Solidifier in buckets (= 1000 mB)
-# [Default value]: 8
-# [Validation]: Value >= 1
-block.stone_solidifier.fluid_tank_capacity = 4
-
-# The time a recipe of the Stone Solidifier requires in ticks
-# [Default value]: 25
-# [Validation]: Value >= 1
-block.stone_solidifier.recipe_duration = 25
-
-# The energy capacity of the Filtration Plant in FE
-# [Default value]: 4096
-# [Validation]: Value >= 1
-block.filtration_plant.capacity = 4096
-
-# The energy transfer rate of the Filtration Plant in FE per tick
-# [Default value]: 256
-# [Validation]: Value >= 1
-block.filtration_plant.transfer_rate = 256
-
-# The energy consumption of the Filtration Plant if active in FE per tick
-# [Default value]: 128
-# [Validation]: Value >= 1
-block.filtration_plant.energy_consumption_per_tick = 128
-
-# The fluid tank capacity of the Filtration Plant in buckets (= 1000 mB)
-# [Default value]: 8
-# [Validation]: Value >= 1
-block.filtration_plant.fluid_tank_capacity = 8
-
-# The time a recipe of the Filtration Plant requires in ticks
-# [Default value]: 1000
-# [Validation]: Value >= 1
-block.filtration_plant.recipe_duration = 1000
-
-# The amount of Dirty Water in mB (milli Buckets) which will be converted to Water per completed recipe in the Filtration Plant.
-# [Default value]: 100
-# [Validation]: Value >= 1
-block.filtration_plant.water_usage_per_recipe = 100
 
 # The energy capacity of the Fluid Filler in FE
 # [Default value]: 2048
@@ -1005,40 +687,10 @@ block.fluid_drainer.fluid_tank_capacity = 8
 # [Validation]: Value >= 1
 block.fluid_drainer.fluid_item_transfer_rate = 100
 
-# The fluid tank capacity of the Drain in buckets (= 1000 mB)
-# [Default value]: 2
-# [Validation]: Value >= 1
-block.drain.fluid_tank_capacity = 2
-
-# The amount of ticks the Drain requires to drain 1000 mB (milli Buckets) from the fluid source block above.
-# [Default value]: 20
-# [Validation]: Value >= 1
-block.drain.drain_duration = 20
-
-# The transfer rate per tank and face of an Iron Fluid Pipe face in the extraction state in mB (milli Buckets)
+# The transfer rate per tank and face of a Fluid Pipe face in the extraction state in mB (milli Buckets)
 # [Default value]: 100
 # [Validation]: Value >= 1
-block.iron_fluid_pipe.fluid_transfer_rate = 100
-
-# The transfer rate per tank and face of a Golden Fluid Pipe face in the extraction state in mB (milli Buckets)
-# [Default value]: 1000
-# [Validation]: Value >= 1
-block.golden_fluid_pipe.fluid_transfer_rate = 1000
-
-# The fluid tank capacity of the Fluid Tank (Small) in buckets (= 1000 mB)
-# [Default value]: 8
-# [Validation]: Value >= 1
-block.fluid_tank_small.fluid_tank_capacity = 8
-
-# The fluid tank capacity of the Fluid Tank (Medium) in buckets (= 1000 mB)
-# [Default value]: 32
-# [Validation]: Value >= 1
-block.fluid_tank_medium.fluid_tank_capacity = 32
-
-# The fluid tank capacity of the Fluid Tank (Large) in buckets (= 1000 mB)
-# [Default value]: 128
-# [Validation]: Value >= 1
-block.fluid_tank_large.fluid_tank_capacity = 128
+block.fluid_pipe.fluid_transfer_rate = 100
 
 # The energy capacity of the Charger in FE
 # [Default value]: 8192
