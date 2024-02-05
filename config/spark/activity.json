@@ -1,0 +1,54 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "MCAdventureCity",
+      "uniqueId": "ff3aea58-0c26-4b2d-9302-fe403bf00311"
+    },
+    "time": 1707175429125,
+    "type": "Heap dump summary",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/8wiQlrpB6N"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "MCAdventureCity",
+      "uniqueId": "ff3aea58-0c26-4b2d-9302-fe403bf00311"
+    },
+    "time": 1707175396904,
+    "type": "Heap dump summary",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/0j2vNFmWPq"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "MCAdventureCity",
+      "uniqueId": "ff3aea58-0c26-4b2d-9302-fe403bf00311"
+    },
+    "time": 1707175295166,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/lmXTbR8879"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "MCAdventureCity",
+      "uniqueId": "ff3aea58-0c26-4b2d-9302-fe403bf00311"
+    },
+    "time": 1707174968051,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/sSwsBBn43s"
+    }
+  }
+]
