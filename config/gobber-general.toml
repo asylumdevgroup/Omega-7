@@ -292,10 +292,6 @@
 
 #Misc Ring/staff Settings
 [misc_ring_staff_settings]
-	#Reverse the drop/no drops feature on Ring of Miner [true / false, default: false]
-	reverseRingMiner = false
-	#Uses a delayed break mode to reduce stutter and potential lag on Ring of Miner and Ring of Lumberjack [true / false, default: true]
-	delayedBreakMode = true
 	#Ring of Acceleration - amount of velocity applied [default: 0.18]
 	#Range: 0.0 ~ 0.3
 	ringAccelerationVelocity = 0.18

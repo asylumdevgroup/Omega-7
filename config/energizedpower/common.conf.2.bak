@@ -523,6 +523,36 @@ block.crusher.energy_consumption_per_tick = 8
 # [Validation]: Value >= 1
 block.crusher.recipe_duration = 100
 
+# The energy capacity of the Advanced Crusher in FE
+# [Default value]: 4096
+# [Validation]: Value >= 1
+block.advanced_crusher.capacity = 4096
+
+# The energy transfer rate of the Advanced Crusher in FE per tick
+# [Default value]: 256
+# [Validation]: Value >= 1
+block.advanced_crusher.transfer_rate = 256
+
+# The energy consumption of the Advanced Crusher if active in FE per tick
+# [Default value]: 32
+# [Validation]: Value >= 1
+block.advanced_crusher.energy_consumption_per_tick = 32
+
+# The time a recipe of the Advanced Crusher requires in ticks
+# [Default value]: 25
+# [Validation]: Value >= 1
+block.advanced_crusher.recipe_duration = 25
+
+# The fluid tank capacity of the Advanced Crusher in buckets (= 1000 mB)
+# [Default value]: 8
+# [Validation]: Value >= 1
+block.advanced_crusher.fluid_tank_capacity = 8
+
+# The amount of Water in mB (milli Buckets) which will be converted to Dirty Water per completed recipe in the Advanced Crusher.
+# [Default value]: 10
+# [Validation]: Value >= 1
+block.advanced_crusher.water_usage_per_recipe = 10
+
 # The energy capacity of the Pulverizer in FE
 # [Default value]: 2048
 # [Validation]: Value >= 1
@@ -542,6 +572,36 @@ block.pulverizer.energy_consumption_per_tick = 8
 # [Default value]: 100
 # [Validation]: Value >= 1
 block.pulverizer.recipe_duration = 100
+
+# The energy capacity of the Advanced Pulverizer in FE
+# [Default value]: 4096
+# [Validation]: Value >= 1
+block.advanced_pulverizer.capacity = 4096
+
+# The energy transfer rate of the Advanced Pulverizer in FE per tick
+# [Default value]: 256
+# [Validation]: Value >= 1
+block.advanced_pulverizer.transfer_rate = 256
+
+# The energy consumption of the Advanced Pulverizer if active in FE per tick
+# [Default value]: 32
+# [Validation]: Value >= 1
+block.advanced_pulverizer.energy_consumption_per_tick = 32
+
+# The time a recipe of the Advanced Pulverizer requires in ticks
+# [Default value]: 25
+# [Validation]: Value >= 1
+block.advanced_pulverizer.recipe_duration = 25
+
+# The fluid tank capacity of the Advanced Pulverizer in buckets (= 1000 mB)
+# [Default value]: 8
+# [Validation]: Value >= 1
+block.advanced_pulverizer.fluid_tank_capacity = 8
+
+# The amount of Water in mB (milli Buckets) which will be converted to Dirty Water per completed recipe in the Advanced Pulverizer.
+# [Default value]: 10
+# [Validation]: Value >= 1
+block.advanced_pulverizer.water_usage_per_recipe = 10
 
 # The energy capacity of the Sawmill in FE
 # [Default value]: 2048
@@ -856,7 +916,7 @@ block.stone_solidifier.transfer_rate = 256
 block.stone_solidifier.energy_consumption_per_tick = 128
 
 # The fluid tank capacity of the Stone Solidifier in buckets (= 1000 mB)
-# [Default value]: 4
+# [Default value]: 8
 # [Validation]: Value >= 1
 block.stone_solidifier.fluid_tank_capacity = 4
 
@@ -864,6 +924,36 @@ block.stone_solidifier.fluid_tank_capacity = 4
 # [Default value]: 25
 # [Validation]: Value >= 1
 block.stone_solidifier.recipe_duration = 25
+
+# The energy capacity of the Filtration Plant in FE
+# [Default value]: 4096
+# [Validation]: Value >= 1
+block.filtration_plant.capacity = 4096
+
+# The energy transfer rate of the Filtration Plant in FE per tick
+# [Default value]: 256
+# [Validation]: Value >= 1
+block.filtration_plant.transfer_rate = 256
+
+# The energy consumption of the Filtration Plant if active in FE per tick
+# [Default value]: 128
+# [Validation]: Value >= 1
+block.filtration_plant.energy_consumption_per_tick = 128
+
+# The fluid tank capacity of the Filtration Plant in buckets (= 1000 mB)
+# [Default value]: 8
+# [Validation]: Value >= 1
+block.filtration_plant.fluid_tank_capacity = 8
+
+# The time a recipe of the Filtration Plant requires in ticks
+# [Default value]: 1000
+# [Validation]: Value >= 1
+block.filtration_plant.recipe_duration = 1000
+
+# The amount of Dirty Water in mB (milli Buckets) which will be converted to Water per completed recipe in the Filtration Plant.
+# [Default value]: 100
+# [Validation]: Value >= 1
+block.filtration_plant.water_usage_per_recipe = 100
 
 # The energy capacity of the Fluid Filler in FE
 # [Default value]: 2048
