@@ -27,14 +27,6 @@
 	#Tooltip will don't show when 'Enchantment Descriptions' or 'Enchantment Lore' or 'CoFH Core' installed.
 	#but, if this set 'true' show tooltip with ignore that mods.
 	tooltip_ignore = false
-	#Energy usage for breath [in every 30 ticks]
-	space_breathing_energy_using = 30
-	#Oxygen usage on using durability
-	space_breathing_durability_oxygen = 2
-	#Durability usage for breath
-	space_breathing_durability_using = 1
-	#Breath duration on using durability [ticks, be multiple of 30]
-	space_breathing_durability_duration = 60
 	#Energy usage for proof [in every 10 ticks]
 	space_fire_proof_energy_using = 10
 	#Durability usage for proof
@@ -57,8 +49,6 @@
 [compats]
 
 	[compats.mekanism]
-		#Energy usage for provide oxygen [in every 30 ticks]
-		modules_space_breathing_energy_using_provide = 300
 		#Energy usage per mb when produce Mekanism oxygen to player in water, rain
 		modules_space_breathing_energy_using_produce = 200
 		#Energy usage for proof in every ticks [in every 10 ticks]
